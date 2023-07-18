@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""unittests for models/square.py.
+# test_square.py
+# Brennan D Baraban <375@holbertonschool.com>
+"""Defines unittests for models/square.py.
 
 Unittest classes:
     TestSquare_instantiation - line 24
@@ -352,7 +354,7 @@ class TestSquare_stdout(unittest.TestCase):
             The text printed to stdout by calling method on sq.
         """
         capture = io.StringIO()
-OAOAOA        sys.stdout = capture
+        sys.stdout = capture
         if method == "print":
             print(sq)
         else:
